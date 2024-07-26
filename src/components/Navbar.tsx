@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <header className="shadow-md text-secondary-500">
+      <header className="fixed w-screen shadow-md text-secondary-500 z-50 bg-white">
         <nav className="flex items-center justify-between p-2">
           <div className="flex justify-center items-center">
             <Icon iconName="mrdogkat" size={60} className="m-2" />
