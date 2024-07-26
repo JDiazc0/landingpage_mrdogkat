@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   };
 
   const menuItems = [
-    { name: "Nosotros", href: "#" },
+    { name: "Nosotros", href: "#nosotros" },
     { name: "Productos", href: "#" },
     { name: "Beneficios", href: "#" },
   ];
@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className="font-arapey flex justify-between text-2xl hidden md:flex">
             {menuItems.map((item) => (
-              <a key={item.name} href={item.href} className="mr-5">
+              <a key={item.name} href={item.href} className="mr-10">
                 {item.name}
               </a>
             ))}
