@@ -43,10 +43,10 @@ const Products: React.FC = () => {
   return (
     <>
       <section
-        id="Productos"
+        id="productos"
         className="flex flex-col justify-center items-center ">
-        <h2 className="font-arapey text-5xl m-5">Productos Populares</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <h2 className="font-arapey text-5xl m-5 z-10">Productos Populares</h2>
+        <div className="grid grid-cols-3 gap-4 z-10">
           {popularProducts.map((index) => (
             <ProductCard
               imageName={index.imageName}
