@@ -15,6 +15,7 @@ import Close from "../svg/mingcute--close-line.svg?react";
 import MrdogkatIcon from "../svg/MrDogKat_icon.svg?react";
 import Ellipse1 from "../svg/Ellipse_1.svg?react";
 import Ellipse2 from "../svg/Ellipse_2.svg?react";
+import Bars from "../svg/Bar_Decoration.svg?react";
 
 type IconType = {
   [key: string]: React.FC<React.SVGProps<SVGSVGElement>>;
@@ -35,6 +36,7 @@ export const Icons: IconType = {
   mrdogkat: MrdogkatIcon,
   elipse1: Ellipse1,
   elipse2: Ellipse2,
+  bars: Bars,
 };
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
