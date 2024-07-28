@@ -10,8 +10,8 @@ const Navbar: React.FC = () => {
 
   const menuItems = [
     { name: "Nosotros", href: "#nosotros" },
-    { name: "Productos", href: "#" },
-    { name: "Beneficios", href: "#" },
+    { name: "Productos", href: "#productos" },
+    { name: "Beneficios", href: "#beneficios" },
   ];
 
   return (
