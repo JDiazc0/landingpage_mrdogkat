@@ -27,8 +27,10 @@ const ProductCard: React.FC<ProudctCardProps> = ({
         <div className="font-arapey">
           <p className="text-secondary-800 ml-2 text-2xl">{name}</p>
           <p className="text-secondary-200 ml-2">{description}</p>
-          <div className="flex justify-between mt-5 mb-3">
-            <p className="text-primary-500 ml-2 text-2xl">$ {price}</p>
+          <div className="flex justify-between items-center mt-5 mb-3">
+            <p className="text-primary-500 ml-2 text-xl font-roboto font-extrabold">
+              $ {price}
+            </p>
             <button className="rounded-full bg-primary-100 h-[30px] w-[30px] flex justify-center items-center mr-2 hover:cursor-pointer">
               <Icon iconName="shop" size={20} className="text-primary-500" />
             </button>
