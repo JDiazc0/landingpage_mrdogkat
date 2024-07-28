@@ -11,10 +11,11 @@ const AboutUs: React.FC = () => {
         <div className="flex flex-col p-8 z-10">
           <h2 className="font-Signatra text-primary-500 text-4xl">Nosotros</h2>
           <p className="max-w-2xl text-secondary-500 font-arapey text-xl">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores,
-            ratione dolor nisi nemo fugiat labore totam in eaque ex corrupti
-            magni sint explicabo quae dolore aspernatur sed libero, itaque
-            dolorem?
+            Somos empresa dedicada a la elaboración de snacks naturales y
+            saludables para mascotas. Nuestros productos están hechos con
+            ingredientes 100% naturales y locales, sin conservantes ni aditivos
+            artificiales, diseñados para promover el bienestar y la longevidad
+            de las mascotas.
           </p>
         </div>
 
