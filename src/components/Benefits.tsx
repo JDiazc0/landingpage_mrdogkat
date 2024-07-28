@@ -6,7 +6,9 @@ import "../assets/styles/animations.css";
 const Benefits: React.FC = () => {
   return (
     <>
-      <section className="flex justify-center items-center h-[75vh]">
+      <section
+        id="beneficios"
+        className="flex justify-center items-center h-[75vh]">
         <div
           className="relative flex flex-col justify-center items-end 
           bg-secondary-500 w-[1100px] h-[330px] rounded-2xl shadow-inner-custome">
