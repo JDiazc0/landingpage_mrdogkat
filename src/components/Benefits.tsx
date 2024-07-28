@@ -1,9 +1,51 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Icon } from "../assets/utils/Icon";
 import { Image } from "../assets/utils/Images";
 import "../assets/styles/animations.css";
 
 const Benefits: React.FC = () => {
+  const [index, setIndex] = useState(1);
+  const [animationClass, setAnimationClass] = useState("shrink-animation");
+
+  const benefits = [
+    {
+      iconName: "natural",
+      text: "100% Naturales",
+    },
+    {
+      iconName: "durability",
+      text: "Entretenimiento de larga duración",
+    },
+    {
+      iconName: "trainer",
+      text: "Facilita los entrenamientos",
+    },
+    {
+      iconName: "healty",
+      text: "Reduce el estres",
+    },
+    {
+      iconName: "tooth",
+      text: "Ayuda con la limpieza dental",
+    },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimationClass("shrink-animation");
+      setTimeout(() => {
+        setIndex((prevIndex) => (prevIndex + 1) % benefits.length);
+      }, 1500);
+      setTimeout(() => {
+        setAnimationClass("");
+      }, 3000);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const { iconName, text } = benefits[index];
+
   return (
     <>
       <section
@@ -12,15 +54,14 @@ const Benefits: React.FC = () => {
         <div
           className="relative flex flex-col justify-center items-end 
           bg-secondary-500 w-[1100px] h-[330px] rounded-2xl shadow-inner-custome">
-          <div className="mx-20">
+          <div className="mx-20 w-[600px]">
             <h2 className="font-Signatra text-primary-500 text-4xl mx-10">
               Beneficios
             </h2>
-            <div className="flex justify-center items-center">
-              <Icon iconName="trainer" size={100} className="text-white" />
-              <p className="font-arapey text-white text-5xl">
-                Mejora el entrenamiento
-              </p>
+            <div
+              className={`flex justify-center items-center ${animationClass}`}>
+              <Icon iconName={iconName} size={80} className="text-white mx-3" />
+              <p className="font-arapey text-white text-4xl">{text}</p>
             </div>
           </div>
           <Image
