@@ -32,6 +32,7 @@ export default {
       fontFamily: {
         Signatra: ["Signatra", "sans-serif"],
         arapey: ["Arapey", "serif"],
+        roboto: ["Roboto", "serif"],
       },
       boxShadow: {
         "inner-custome": "inset 0px 0px 29px 6px rgba(0,0,0,0.75)",
