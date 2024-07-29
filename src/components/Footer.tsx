@@ -15,20 +15,30 @@ const Footer: React.FC = () => {
             </div>
             <p>Snacks naturales</p>
             <div className="flex flex-row">
-              <div
-                className="rounded-full bg-primary-500 h-[30px] w-[30px] 
+              <a
+                href="https://wa.me/573016358795?text=Hola%20me%20interesa%20conocer%20sus%20productos"
+                target="_blank"
+                rel="noopener noreferrer">
+                <div
+                  className="rounded-full bg-primary-500 h-[30px] w-[30px] 
                 flex justify-center items-center mx-2 my-10">
-                <Icon iconName="whatsapp" size={20} className="text-white" />
-              </div>
-              <div
-                className="rounded-full bg-primary-200 h-[30px] w-[30px] 
+                  <Icon iconName="whatsapp" size={20} className="text-white" />
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/mrdogkat/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <div
+                  className="rounded-full bg-primary-200 h-[30px] w-[30px] 
                 flex justify-center items-center mx-2 my-10">
-                <Icon
-                  iconName="instagram"
-                  size={20}
-                  className="text-secondary-500"
-                />
-              </div>
+                  <Icon
+                    iconName="instagram"
+                    size={20}
+                    className="text-secondary-500"
+                  />
+                </div>
+              </a>
             </div>
           </div>
           <ul>
@@ -48,7 +58,14 @@ const Footer: React.FC = () => {
           </ul>
           <ul>
             <li className="font-bold text-secondary-500">Información</li>
-            <li className="my-5">Contacto</li>
+            <li className="my-5">
+              <a
+                href="https://wa.me/573016358795?text=Hola%20me%20interesa%20conocer%20sus%20productos"
+                target="_blank"
+                rel="noopener noreferrer">
+                Contacto
+              </a>
+            </li>
           </ul>
           <ul>
             <li className="font-bold text-secondary-500">Dirección</li>

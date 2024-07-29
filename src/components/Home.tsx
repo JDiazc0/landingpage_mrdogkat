@@ -3,6 +3,15 @@ import { Icon } from "../assets/utils/Icon";
 import { Image } from "../assets/utils/Images";
 
 const Home: React.FC = () => {
+  const contactWhatsApp = () => {
+    const phoneNumber = "573016358795";
+    const message = "Hola, me interesa conocer sus productos";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <section id="inicio" className="relative w-full h-screen overflow-hidden">
       <div className="font-arapey flex flex-col justify-center items-center h-screen w-[50%] relative z-10">
@@ -12,6 +21,7 @@ const Home: React.FC = () => {
           </h1>
           <p className="text-3xl">snacks naturales</p>
           <button
+            onClick={contactWhatsApp}
             className="flex text-white text-lg bg-primary-500 rounded-2xl w-40 
             justify-around items-center shadow-md shadow-primary-600 active:scale-95">
             Ordena Ahora
