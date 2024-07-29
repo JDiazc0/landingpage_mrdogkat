@@ -22,7 +22,7 @@ const Benefits: React.FC = () => {
     },
     {
       iconName: "healty",
-      text: "Reduce el estres",
+      text: "Reduce el estrés",
     },
     {
       iconName: "tooth",
